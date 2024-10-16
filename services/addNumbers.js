@@ -1,6 +1,10 @@
-const addNumbers = (value1, value2) => {
+const addNumbers = (valuesArray) => {
   console.log('Sample add Number Functions');
-  return value1 + value2;
+  let totalValue = 0;
+  valuesArray.forEach((eachValue) => {
+    totalValue += eachValue
+  })
+  return totalValue;
 }
 
 exports.addNumbers = addNumbers;
